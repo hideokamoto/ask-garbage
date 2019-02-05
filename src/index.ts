@@ -9,8 +9,7 @@ import SearchByType from './handlers/SearchByType/Index'
 import StopIntent from './handlers/Stop'
 import { skillConfig } from './model'
 
-
-const getGarbageIntentHandlers = (config: skillConfig) => {
+export const getGarbageIntentHandlers = (config: skillConfig) => {
   const handlerNames = [
       LaunchRequest,
       SearchByTown.Inprogress,
@@ -29,4 +28,5 @@ const getGarbageIntentHandlers = (config: skillConfig) => {
   ]
   return handlerNames.map(handler => new handler(config))
 }
-export default getGarbageIntentHandlers
+
+export * from './model'

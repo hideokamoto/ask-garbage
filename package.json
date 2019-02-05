@@ -1,8 +1,8 @@
 {
   "name": "ask-garbage",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -21,6 +21,7 @@
     "@types/moment": "^2.13.0",
     "@types/moment-timezone": "^0.5.10",
     "@types/node": "^8.0.57",
+    "@types/request-promise": "^4.1.42",
     "ask-sdk": "^2.3.0",
     "ask-sdk-core": "^2.3.0",
     "ask-sdk-model": "^1.2.0",

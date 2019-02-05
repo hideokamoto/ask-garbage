@@ -23,8 +23,8 @@ import {
 import GarbageHandler from '../GarbageHandler'
 
 // v1
-const RemidnerAdaptor = require('../../v1/reminderAdaptor')
-const ReminderDetail = require('../../v1/ReminderDetail')
+import RemidnerAdaptor from '../../v1/reminderAdaptor'
+import ReminderDetail from '../../v1/ReminderDetail'
 
 // 西宮ゴミガイドでリマインダー一覧
 class ListReminder extends GarbageHandler {

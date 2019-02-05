@@ -23,7 +23,7 @@ import {
 import GarbageHandler from '../GarbageHandler'
 
 // v1
-const RemidnerAdaptor = require('../../v1/reminderAdaptor')
+import RemidnerAdaptor from '../../v1/reminderAdaptor'
 
 class DeleteReminder extends GarbageHandler {
   canHandle(handlerInput: HandlerInput) {

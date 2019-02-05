@@ -22,8 +22,8 @@ import {
 import GarbageHandler from '../GarbageHandler'
 
 // v1
-const RemidnerAdaptor = require('../../v1/reminderAdaptor')
-const NewNotification = require('../../v1/newNotification')
+import RemidnerAdaptor from '../../v1/reminderAdaptor'
+import NewNotification from '../../v1/newNotification'
 
 const requestReminderText = [
   'リマインダーを登録するために、アプリの設定を更新する必要があります。',
