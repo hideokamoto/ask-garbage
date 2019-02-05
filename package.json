@@ -44,5 +44,23 @@
   "bugs": {
     "url": "https://github.com/hideokamoto/ask-garbage/issues"
   },
-  "homepage": "https://github.com/hideokamoto/ask-garbage#readme"
+  "homepage": "https://github.com/hideokamoto/ask-garbage#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.test.+(ts|tsx|js)"
+    ]
+  }
 }
