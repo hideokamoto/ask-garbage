@@ -1,4 +1,5 @@
-import Engine from 'garbage-calendar-engine';
+// import Engine from 'garbage-calendar-engine';
+const Engine = require('garbage-calendar-engine')
 
 export const getCalendarService = (targetCalendar: {}, cityName: string) => {
     const calendar = new Engine.Entities.Calendar(targetCalendar, cityName)
