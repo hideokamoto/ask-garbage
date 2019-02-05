@@ -58,7 +58,8 @@ class SearchByTownResult extends GarbageHandler {
     }
     async handle(handlerInput: HandlerInput) {
       const { responseBuilder } = handlerInput
-      const { persistedTownName } = await handlerInput.attributesManager.getPersistentAttributes()
+      const atts = await handlerInput.attributesManager.getPersistentAttributes()
+      const persistedTownName = atts.persistedTownName || ''
       const town = getSlotValue(handlerInput, 'town') || persistedTownName
       const date = getSlotValue(handlerInput, 'date')
       const service = getCalendarService(this.config.CALENDAR, this.config.CITY_NAME)

@@ -43,7 +43,8 @@ class SearchByTypeInprogress extends GarbageHandler {
     const request = handlerInput.requestEnvelope.request as SearchByTypeRequest
     const { intent } = request
     if (!town) {
-      const { persistedTownName } = await handlerInput.attributesManager.getPersistentAttributes()
+      const atts = await handlerInput.attributesManager.getPersistentAttributes()
+      const persistedTownName = atts.persistedTownName || ''
       if (!persistedTownName) {
         const speechText = getRandomMessage([
           '町名を教えてください。',
